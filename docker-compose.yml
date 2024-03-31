@@ -12,10 +12,10 @@ services:
       SPRING_DATASOURCE_URL: ${DATABASE_URL}
       SPRING_DATASOURCE_USERNAME: ${DATABASE_USERNAME}
       SPRING_DATASOURCE_PASSWORD: ${DATABASE_PASSWORD}
-      SPRING_JPA_GENERATE_DDL: true
+      SPRING_JPA_GENERATE_DDL: "true"
       SERVER_PORT: 8080
       DOMAIN_REDIRECT: ${DOMAIN_REDIRECT}
     deploy:
       resources:
         limits:
-          memory: 70M
+          memory: 100M
