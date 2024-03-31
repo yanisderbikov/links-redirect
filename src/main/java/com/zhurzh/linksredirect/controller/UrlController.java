@@ -15,5 +15,10 @@ public class UrlController {
         String url = urlService.getUrlAndCountClick(id);
         return "redirect:"+url;
     }
+
+    @GetMapping
+    public String redirect() {
+        return "redirect:" + "https://www.furaffinity.net/user/zhurzh/";
+    }
 }
 
